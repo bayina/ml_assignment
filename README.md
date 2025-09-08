@@ -17,6 +17,7 @@ The goal is to practice fundamental concepts, implement algorithms without high-
 .
 ├── Assignment-01/
 │   └── GradientDescent_vs_NormalEquation.ipynb
+|   └── README.md
 ├── Assignment-02/
 │   └── <notebooks + supporting files>
 ├── Assignment-07/
@@ -25,7 +26,7 @@ The goal is to practice fundamental concepts, implement algorithms without high-
 └── requirements.txt
 ```
 
-- Each assignment has its own folder.  
+- Each assignment has its own folder with the explanation in README.md 
 - Solutions are mainly Jupyter notebooks (`.ipynb`).  
 - Supporting files (datasets, images, reports) are stored alongside the corresponding assignment.
 
@@ -73,11 +74,6 @@ Install them with:
 pip install numpy matplotlib
 ```
 
-or
-
-```bash
-pip install -r requirements.txt
-```
 ---
 
 ## ▶️ How to Run
@@ -89,6 +85,10 @@ pip install -r requirements.txt
    ```
 
 2. Launch Jupyter Notebook or JupyterLab:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
    ```bash
    jupyter notebook
    ```
