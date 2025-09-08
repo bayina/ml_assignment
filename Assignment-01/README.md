@@ -1,5 +1,11 @@
 # 📓 Assignment-01: Linear Regression with Gradient Descent vs Normal Equation
 
+## Student Details
+
+| Name | Student ID            |
+|-------------|-----------------|
+| Chandhini Bayina         | #700756775   |
+
 ## Notebook Walkthrough
 
 ### Cell 1 — Title & Overview (Markdown)
