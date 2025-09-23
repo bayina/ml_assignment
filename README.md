@@ -19,7 +19,7 @@ The goal is to practice fundamental concepts, implement algorithms without high-
 │   └── GradientDescent_vs_NormalEquation.ipynb
 |   └── README.md
 ├── Assignment-02/
-│   └── <notebooks + supporting files>
+│   └── hw2_prog_ml.ipynb
 ├── Assignment-07/
 │   └── GradientDescent_vs_NormalEquation.ipynb
 └── README.md
@@ -37,6 +37,7 @@ The goal is to practice fundamental concepts, implement algorithms without high-
 | Assignment | Topic | Notebook |
 |------------|-------|----------|
 | Assignment-01 | Linear Regression: Normal Equation vs Gradient Descent | [GradientDescent_vs_NormalEquation.ipynb](Assignment-01/GradientDescent_vs_NormalEquation.ipynb) |
+| Assignment-02 | Decision tree, KNN, Performance Evaluation | [hw2_prog_ml.ipynb](Assignment-02/hw2_prog_ml.ipynb) 
 
 *(More assignments will be added here as the repo grows.)*
 
