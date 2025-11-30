@@ -25,9 +25,10 @@ Implements the **Scaled Dot-Product Attention** mechanism using **NumPy**.
 
 ### 🔢 Formula
 
-[
+$$
 \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^\top}{\sqrt{d_k}}\right)V
-]
+$$
+
 
 ### Notebook includes:
 
