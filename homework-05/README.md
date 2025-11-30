@@ -1,91 +1,100 @@
-# Mini Attention & Transformer Encoder Project
+# 📘 Mini Attention & Transformer Encoder Project
 
-This mini-project contains two small modules that implement:
+This mini-project now contains **two Jupyter Notebooks** that implement:
 
 1. **Scaled Dot-Product Attention (NumPy)**
 2. **A Simple Transformer Encoder Block (PyTorch)**
 
-The files are heavily commented and include docstrings so you can understand
-what each line is doing.
+Both notebooks include full explanations, inline comments, and demonstration outputs.
 
 ---
 
-## Student Details
+## 👩‍🎓 Student Details
 
-| Name | Student ID            |
-|-------------|-----------------|
-| Chandhini Bayina         | #700756775   |
-
----
-
-
-## Files
-
-- `scaled_dot_product_attention.py`  
-  Implements the **scaled dot-product attention** mechanism:
-
-  \[
-  \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^\top}{\sqrt{d_k}}\right)V
-  \]
-
-  - Written with **NumPy**.
-  - Provides:
-    - `softmax` function.
-    - `scaled_dot_product_attention(q, k, v)` function.
-  - The `__main__` block contains a small demo showing shapes.
-
-- `transformer_encoder_block.py`  
-  Implements a **simplified Transformer encoder block** in **PyTorch**:
-
-  Components:
-  - Multi-head self-attention (`nn.MultiheadAttention`)
-  - Feed-forward network: `Linear -> ReLU -> Linear`
-  - Residual connections (skip connections)
-  - Layer normalization (Add & Norm layers)
-
-  Default settings:
-  - `d_model = 128`
-  - `num_heads = 8`
-
-  The `__main__` block runs a forward pass on a batch of
-  **32 sentences × 10 tokens** and prints the resulting shape.
+| Name                 | Student ID     |
+| -------------------- | -------------- |
+| **Chandhini Bayina** | **#700756775** |
 
 ---
 
-## Requirements
+# 📁 Files
 
-Install dependencies (for example with `pip`):
+### ✅ **1. `scaled_dot_product_attention.ipynb`**
+
+Implements the **Scaled Dot-Product Attention** mechanism using **NumPy**.
+
+### 🔢 Formula
+
+[
+\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^\top}{\sqrt{d_k}}\right)V
+]
+
+### Notebook includes:
+
+* Explanation of Q, K, V and tensor shapes
+* Numerically stable softmax implementation
+* Full attention function
+* Shape tests and printed outputs
+* Step-by-step markdown cells so the logic is easy to follow
+
+---
+
+### ✅ **2. `transformer_encoder_block.ipynb`**
+
+Implements a **simplified Transformer Encoder Block** using **PyTorch**.
+
+### Components included:
+
+* Multi-head self-attention (`nn.MultiheadAttention`)
+* Feed-forward network (`Linear → ReLU → Linear`)
+* Layer Norm + residual connections
+* Explanation of how each sub-layer works
+
+### Notebook includes:
+
+* Step-by-step markdown explanation
+* Full PyTorch implementation
+* Test using:
+
+  * **Batch size:** 32 sentences
+  * **Seq length:** 10 tokens
+  * **Embedding size:** 128
+* Output shape verification
+
+---
+
+# 📦 Requirements
+
+Install dependencies:
 
 ```bash
 pip install numpy torch
 ```
+
+(If using PyTorch with NumPy 2.x, you may need `numpy<2` for compatibility.)
+
 ---
 
-## Usage
-1. Scaled Dot-Product Attention (NumPy)
+# ▶️ Running the Notebooks
 
-```python
+Open them in **VS Code**, **Jupyter Notebook**, or **JupyterLab**.
 
-attn_weights, context = scaled_dot_product_attention(q, k, v)
+Recommended kernel setup:
 
-print(attn_weights.shape)  # (2, 4, 4)
-print(context.shape)       # (2, 4, 8)
+```bash
+pip install ipykernel
+python -m ipykernel install --user --name ml_assignment --display-name "Python (ML Assignment)"
 ```
 
-2. Transformer Encoder Block (PyTorch)
+Then select this kernel when opening the notebooks.
 
-Run the built-in shape test:
+---
 
-```python
-batch_size = 32
-seq_len = 10
-d_model = 128
+# 📄 Output
 
-x = torch.randn(batch_size, seq_len, d_model)
-encoder_block = TransformerEncoderBlock(d_model=d_model, num_heads=8)
+Each notebook prints:
 
-out = encoder_block(x)
-print(out.shape)  # torch.Size([32, 10, 128])
-```
+* Attention weights + context shapes (Q1)
+* Encoder block input/output shapes (Q2)
 
-## Output
+Demonstrating that both implementations work correctly.
