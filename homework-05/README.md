@@ -37,6 +37,7 @@ $$
 * Full attention function
 * Shape tests and printed outputs
 * Step-by-step markdown cells so the logic is easy to follow
+* Produces: Weights and Vector
 
 ---
 
@@ -95,7 +96,7 @@ Then select this kernel when opening the notebooks.
 
 Each notebook prints:
 
-* Attention weights + context shapes (Q1)
+* Attention weights + Vector (Q1)
 * Encoder block input/output shapes (Q2)
 
 Demonstrating that both implementations work correctly.
